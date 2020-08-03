@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Entrypoint script executed"
+rostest ros_messaging test_message_publisher.test
