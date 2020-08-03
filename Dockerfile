@@ -12,4 +12,4 @@ RUN \
 
 RUN chmod +x /root/catkin_ws/src/entrypoint.sh
 
-ENTRYPOINT ["bash" "/root/catkin_ws/src/entrypoint.sh"]
+ENTRYPOINT ["/root/catkin_ws/src/entrypoint.sh"]
