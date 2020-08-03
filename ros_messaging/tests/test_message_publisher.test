@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="ros_messaging" type="message_publisher.py" name="message_publisher"/>
+    <test test-name="test_message_publisher" pkg="ros_messaging" type="test_message_publisher.py"/>
+
+</launch>
