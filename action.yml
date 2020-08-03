@@ -1,0 +1,7 @@
+name: 'run-ros-tests'
+
+description: 'Runs tests in the ros_messaging package'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
