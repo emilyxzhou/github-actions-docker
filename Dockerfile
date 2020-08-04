@@ -6,6 +6,9 @@ RUN \
 
 COPY . /root/catkin_ws/src
 
-RUN chmod +x /root/catkin_ws/src/entrypoint.sh
+RUN chmod +x /root/catkin_ws/src/entrypoint.sh \
+    && /bin/bash -c "source /opt/ros/kinetic/setup.bash" \
+    && roscd; cd .. \
+    && catkin_make
 
 ENTRYPOINT ["/root/catkin_ws/src/entrypoint.sh"]
