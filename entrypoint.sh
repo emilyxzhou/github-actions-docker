@@ -1,5 +1,3 @@
 #!/bin/sh
+/bin/bash -c "source /root/catkin_ws/devel/setup.bash && rostest ros_messaging test_message_publisher.test"
 
-cd /root/catkin_ws
-/bin/bash -c "source /opt/ros/kinetic/setup.bash " && catkin_make
-rostest ros_messaging test_message_publisher.test
